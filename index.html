@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Стажировка</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="container">
+        <div id="change">
+            <div id="changecount">
+                <input type="text" id="changecount_input" placeholder="Change count...">
+                <button type="button" class="submit" onclick="changeCount();">Change count</button>
+            </div>
+            <div id="sortelem">
+                <select required id="sortelem_select">
+                    <option value="-1" disabled selected hidden>Sort by...</option>
+                    <option value="0">Sort by rating(ascending)</option>
+                    <option value="1">Sort by rating(desc)</option>
+                    <option value="2">Sort by price(ascending)</option>
+                    <option value="3">Sort by price(desc)</option>
+                </select>
+                <button type="button" class="submit" onclick="sort();">Sort</button>
+            </div>
+        </div>
+        <div id="list"></div>
+        <div id="desc"></div>
+    </div>
+    <div class="footer">
+        <h3>Выполнил: Дюпин Алексей</h3>
+        <h3>Email: dyupin.lesha@yandex.ru</h3>
+    </div>
+
+</body>
+
+<script src="./index.js"></script>
+
+</html>
